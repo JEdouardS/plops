@@ -1,11 +1,28 @@
-<html>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js"> <!--<![endif]-->
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Plop's</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Plop's</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
 	
 	<link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 	<body>
+		<nav>
+			<ul>
+				<li id="accueil"><a href="#">Accueil</a></li>
+				<li><a href="#">Boutique</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Pro</a></li>
+			</ul>
+	    </nav>
+
 		<div id="slide1">
 			<div class="slide_inside">
 				
@@ -14,17 +31,27 @@
 
 		<div id="slide2">
 			<div class="slide_inside">
-				
-				<div id="texte">
-				<h1>Plop's, qu'est-ce que c'est ?</h1>
-				<p>Plop’s, c’est la nouvelle façon de personnaliser votre smartphone. Ces petits patchs en résine adhésifs repositionnables protègent votre téléphone, ne laissent aucune trace et s’adaptent selon vos gouts et vos envies ! Plus que de simples accessoires, les Plop’s proposent un nouveau moyen de communication inédit. En effet quoi de mieux pour afficher votre logo, votre marque ou tout simplement vos gouts personnels que l’objet le plus utilisé au quotidien, autrement dit le téléphone portable ?</p>
-
-				<p>L’utilisation du Plop’s n’est cependant pas limitée aux seuls smartphones. Ils trouveront également place et utilité sur les tablettes, les consoles de jeux portables, les télécommandes et tout objet usuel nécessitant protection et adhérence.</p>
-				</div>
+				<div id="video"><iframe width="980" height="486" src="//www.youtube.com/embed/IJNR2EpS0jw" frameborder="0" allowfullscreen></iframe></div>	
 			</div>
 		</div>
 
 		<div id="slide3">
+			<div class="slide_inside">
+				<div id="texte">
+					<h1>Plop's, qu'est-ce que c'est ?</h1>
+
+					<p>Plop’s, c’est la nouvelle façon simple et futée de personnaliser votre smartphone !</p>
+
+					<p>Ces petits patches en résine adhésifs et repositionnables protègent votre appareil en l’empêchant tde déraper.
+					Ils ne laissent aucune trace et s’adaptent selon vos goûts et vos envies ! Plus que de simples accessoires, les Plop’s sont un nouveau moyen de communication.</p>
+
+					<p>Arborez fièrement les Plop’s qui vous représentent sur l’objet que vous utilisez tous les jours : votre téléphone portable !
+					Et ce n’est pas tout ! L’utilisation du Plop’s ne se limite pas aux smartphones. Ils trouveront place sur vos tablettes, consoles de jeux portables, télécommandes... en fait, tout objet usuel nécessitant protection et adhérence.</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="slide4">
 			<div class="slide_inside">
 				
 			</div>
@@ -36,9 +63,10 @@
     $(document).ready(function(){		
         $('#slide1').parallax("50%", 0.1);
         $('#slide2').parallax("50%", 0.1);
-        $('.constance').parallax("50%", 0.2);
         $('#slide3').parallax("50%", 0.1);
+        $('#slide4').parallax("50%", 0.1);
     })
-</script>
+	</script>
+
 	</body>
 </html>
